@@ -20,26 +20,22 @@
     <style>
         body {
             margin: 0; /* Remove default margin */
-            position: relative;
+            overflow: hidden; /* Make the page unscrollable */
         }
         iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
+            height: 100vh; /* Use viewport height for full screen */
             border: none; /* Remove iframe border */
         }
         .game-title {
-            position: absolute;
-            top: -9999px; /* Move it off the screen */
+            text-align: center; /* Center the H1 */
         }
     </style>
 </head>
 <body>
+    <iframe src="https://html5.gamemonetize.co/7m6h616gqacdj70c5kjh8271zgnplfdr/" scrolling="none" frameborder="0"></iframe>
     <div class="game-title">
         <h1>Earth Clicker: Idle Clicker</h1>
     </div>
-    <iframe src="https://html5.gamemonetize.co/7m6h616gqacdj70c5kjh8271zgnplfdr/" scrolling="none" frameborder="0"></iframe>
 </body>
 </html>
