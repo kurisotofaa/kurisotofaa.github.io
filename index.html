@@ -13,9 +13,6 @@
     <meta name="twitter:description" content="Play Earth Clicker: Idle Clicker online - an exciting incremental game.">
     <meta name="twitter:url" content="https://earthclicker.me/logo.png">
     <meta name="twitter:card" content="summary">
-    <div itemscope itemtype="http://schema.org/VideoGame">
-        <h1 itemprop="name">Earth Clicker: Idle Clicker</h1>
-        <p itemprop="description">Play Earth Clicker: Idle Clicker online - an exciting incremental game.</p>
     <!-- BEGIN SHAREAHOLIC CODE -->
     <link rel="preload" href="https://cdn.shareaholic.net/assets/pub/shareaholic.js" as="script" />
     <meta name="shareaholic:site_id" content="83b14f96ddb95654ee25ef04d9ed58ad" />
@@ -33,6 +30,8 @@
         }
         .game-title {
             text-align: center; /* Center the H1 */
+            position: absolute;
+            top: -9999px; /* Hide the structured data off-screen */
         }
     </style>
 </head>
