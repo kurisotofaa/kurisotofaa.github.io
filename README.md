@@ -1,1 +1,0 @@
-# kurisotofaa.github.io
