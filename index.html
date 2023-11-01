@@ -1,39 +1,21 @@
-<script src="./adblockDetector.js"></script>
-	<script>
-	// Configure the adblock detector
-	(function(){
-		var enabledEl = document.getElementById('adb-enabled');
-		var disabledEl = document.getElementById('adb-not-enabled');
-		function adBlockDetected() {
-			enabledEl.style.display = 'block';
-			disabledEl.style.display = 'none';
-		}
-		function adBlockNotDetected() {
-			disabledEl.style.display = 'block';
-			enabledEl.style.display = 'none';
-		}
-		
-		if(typeof window.adblockDetector === 'undefined') {
-			adBlockDetected();
-		} else {
-			window.adblockDetector.init(
-				{
-					debug: true,
-					found: function(){
-						adBlockDetected();
-					},
-					notFound: function(){
-						adBlockNotDetected();
-					}
-				}
-			);
-		}
-	}());
-	</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Earth Clicker: Idle Clicker</title>
+<style>
+    body{
+        margin: 0; /* Remove default margin */
+    }
+    iframe{      
+        display: block;  /* iframes are inline by default */   
+        height: 100vh;  /* Set height to 100% of the viewport height */   
+        width: 100vw;  /* Set width to 100% of the viewport width */     
+        border: none; /* Remove default border */
+        background: lightyellow; /* Just for styling */
+    }
+</style>
+</head>
 <body>
-    <div class="center">
-    <h5 class="bg-success" id="adb-not-enabled" style="display: none;">AdBlock is disabled</h5>
-    <h5 class="bg-danger" id="adb-enabled" style="display: none;">AdBlock is enabled</h5>
-    </div>
+    <iframe src="https://html5.gamemonetize.co/7m6h616gqacdj70c5kjh8271zgnplfdr/" scrolling="none" frameborder="0"></iframe>
 </body>
-<iframe src="https://html5.gamemonetize.co/7m6h616gqacdj70c5kjh8271zgnplfdr/" scrolling="none" frameborder="0"></iframe>
+</html>
