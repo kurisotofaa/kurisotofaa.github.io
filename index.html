@@ -1,1 +1,23 @@
-<iframe src="https://html5.gamemonetize.co/7m6h616gqacdj70c5kjh8271zgnplfdr/" width="640" height="360" scrolling="none" frameborder="0"></iframe>
+<script>
+    /* Author: AdGlare Ad Server (https://www.adglare.com) */
+    function hasAdblock() {
+        var a = document.createElement('div');
+        a.innerHTML = '&nbsp;';
+        a.className = 'ads ad adsbox doubleclick ad-placement carbon-ads adglare';
+        a.style = 'width: 1px !important; height: 1px !important; position: absolute !important; left: -5000px !important; top: -5000px !important;';
+        var r = false;
+        try {
+            document.body.appendChild(a);
+            var e = document.getElementsByClassName('adsbox')[0];
+            if(e.offsetHeight === 0 || e.clientHeight === 0) r = true;
+            if(window.getComputedStyle !== undefined) {
+                var tmp = window.getComputedStyle(e, null);
+                if(tmp && (tmp.getPropertyValue('display') == 'none' || tmp.getPropertyValue('visibility') == 'hidden')) r = true;
+            }
+            document.body.removeChild(a);
+        } catch (e) {}
+        return r;
+    }
+    alert('Has AdBlock: ' + hasAdblock());
+</script>
+<iframe src="https://html5.gamemonetize.co/7m6h616gqacdj70c5kjh8271zgnplfdr/" scrolling="none" frameborder="0"></iframe>
